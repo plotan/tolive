@@ -1,6 +1,6 @@
 // Game configuration
 const CONFIG = {
-  tiktokUsername: "dongkak.com",
+  tiktokUsername: "wandokenzo",
   pointsPerCorrectAnswer: 1,
   nextQuestionDelay: 5000 // 5 seconds
 };
