@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Guess Game</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
+      .game-container {
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        border: 2px solid #333;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        max-width: 100%;
+      }
+      .game-box,
+      .leaderboard {
+        flex: 1;
+        padding: 20px;
+        text-align: center;
+      }
+      .message {
+        font-size: 18px;
+        margin-top: 20px;
+      }
+      .leaderboard {
+        border-left: 2px solid #333;
+        min-width: 200px;
+      }
+      .leaderboard h2 {
+        text-align: center;
+      }
+      .leaderboard ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      .leaderboard li {
+        padding: 5px;
+        font-size: 18px;
+      }
+      @media (max-width: 768px) {
+        .game-container {
+          flex-direction: column;
+          align-items: center;
+        }
+        .leaderboard {
+          border-left: none;
+          border-top: 2px solid #333;
+          padding-top: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="game-box">
+        <h1>Tiktok - Guess Game</h1>
+        <p>Type your answer in TikTok Comment!</p>
+        <p id="clue"></p>
+        <div class="message" id="message"></div>
+      </div>
+      <div class="leaderboard">
+        <h2>Leaderboard</h2>
+        <ul id="leaderboard-list"></ul>
+      </div>
+    </div>
+
+    <script type="module" src="/js/game.js"></script>
+  </body>
+</html>
+
